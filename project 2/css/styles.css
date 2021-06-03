@@ -1,0 +1,291 @@
+* {
+    background-color: rgb(245, 240, 240);
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+Header {
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu :first-child {
+    padding: 5px;
+    background-color: white;
+    width: 300px;
+    text-align: center;
+}
+.menu :nth-child(2) {
+    padding: 5px;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 300px;
+    text-align: center;
+}
+.menu :nth-child(3) {
+    padding: 5px;
+    background-color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 15px 3vh 15px;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 100%;
+}
+
+.profile-img-wrapper {
+    margin: 0px 35px;
+}
+
+.portfolio {
+    background-color: white;
+    margin: 3vh 0px;
+}
+
+.biggest-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0 15px;
+}
+
+.all-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 5vh;
+}
+
+.all-content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.body-images{
+    width: 100%;
+}
+
+.content-p {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 18px;
+}
+
+h2 {
+    background-color: white;
+}
+
+.content-h3 {
+    background-color: white;
+    margin: 30px 0px 0px 0px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6vh 15px 7vh 15px;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px;
+}
+
+.email-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.email {
+    margin-left: 10px;
+}
+
+.number {
+    margin-left: 10px;
+}
+
+hr {
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 15px 35px 15px;
+}
+
+.footer-menu {
+    opacity: 0;
+    z-index: 2;
+}
+
+.gone {
+    position: absolute;
+    margin-left: 60%;
+}
+
+.footer-p{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .all-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .all-content div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 49.5%;
+    }
+
+    .biggest-wrapper {
+        padding: 0 25px;
+    }
+
+    p {
+        margin: 0px 49px 25px 49px;
+    }
+
+    .profile-p {
+        margin: 0px 15px;
+    }
+
+    .profile-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        padding-bottom: 3vh;
+    }
+    .profile-img-wrapper {
+        flex: 2;
+        margin: 0px;
+    }
+
+    .p-wrapper {
+        flex: 3;
+    }
+
+    .profile-img {
+        width: 100%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu :first-child{
+        background-color: transparent ;
+        width: 100%;
+    }
+    .menu :nth-child(2) {
+         background-color: transparent;
+         width: 100%;
+         margin: 0px 55px;
+    }
+
+    .menu :nth-child(3) {
+        background-color: transparent;
+        width: 100%;
+   }
+
+   .content-p {
+    margin: 20px 70px;
+}
+
+   .gone {
+       opacity: 0;
+       position: absolute;
+       margin-left: 80%;
+   }
+
+   .footer-menu {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       opacity: 1;
+   }
+
+   .footer-menu :first-child {
+       margin-right: 10px;
+   }
+
+   a {
+       text-decoration: none;
+       color: black;
+   }
+
+}
+
+@media screen and (min-width: 1024px) { 
+    .all-content div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 32.5%;
+    }
+
+    .menu-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+
+    .content-p {
+        margin: 20px 15px;
+    }
+
+    .footer-menu {
+        opacity: 1;
+    }
+
+    .footer {
+        margin: 15px 40px 20px 40px;
+    }
+
+    .footer-p {
+        padding: 0px 240px;
+    }
+}
